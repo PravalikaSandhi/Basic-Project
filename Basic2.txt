@@ -1,1 +1,2 @@
-This is the second file in local repo
+This is the second file in local repo.
+These files are created to merge with basic branch.
