@@ -21,25 +21,6 @@ pipeline {
                                          echo "Hello"
                                 }
                         }
-                        stage('four') {
-                                        parallel {
-                                              stage('unit test') {
-                                                                 steps {
-                                                                       echo "running the unit test..."
-                                                                 }
-                                              }
-                                              stage('integration test') {
-                                                                 agent {
-                                                                       docker {
-                                                                                reusenode false
-                                                                                image 'ubuntu'
-                                                                       }
-                                                                 }
-                                                                 steps {
-                                                                        echo 'running the integration test...'
-                                                                 }
-                                               }
-                                         }
-}
+                        
 }
 }
